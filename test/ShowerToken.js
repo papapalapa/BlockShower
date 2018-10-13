@@ -58,15 +58,23 @@ contract('ShowerToken', function(accounts) {
         });
     });
 
-
-
-
-
-
-
-
-
-
-
-
+    // Testing validity of delegated transfer transaction
+    it('approves tokens for delegated transfer', function() {
+        return ShowerToken.deployed().then(function(instance) {
+            tokenInstance = instance;
+            return tokenInstance.approve.call(accounts[1], 100);
+        }).then(function(success) {
+            assert.equal(success, true, 'it returns true')
+            return tokenInstance.approve(accounts[1], 100);
+        }).then(function(receipt){
+            assert.equal(receipt.logs.length, 1, 'triggers one event');
+            assert.equal(receipt.logs[0].event, 'Approval', 'Should be the "Approval" event');
+            assert.equal(receipt.logs[0].args._owner, accounts[0], 'Log the sending account');
+            assert.equal(receipt.logs[0].args._spender, accounts[1], 'Log the receiving account');
+            assert.equal(receipt.logs[0].args._value, 100, 'Log the approved value');
+            return tokenInstance.allowance(accounts[0], accounts[1]);
+        }).then(function(allowance) {
+            assert.equal(allowance.toNumber(), 100, 'stores the allowance for delegated transfer');
+        });
+    });
 });
