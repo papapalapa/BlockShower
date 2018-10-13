@@ -31,4 +31,12 @@ contract ShowerTokenSale {
 
         emit Sell(msg.sender, _numberOfTokens);
     }
+
+    // End Token Sales
+    function endSale() public {
+        require(msg.sender == admin); // Require admin
+        require(tokenContract.transfer(admin, tokenContract.balanceOf(this)));
+        
+        admin.transfer(address(this).balance);
+    }
 }
