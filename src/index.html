@@ -35,18 +35,15 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#purchase">Purchase</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#features">Features</a>
-                </li>
-                <li class="nav-item">
-                        <a class="nav-link" href="#testimonials">Testimonials</a>
-                    </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Apply</a>
-                </li>
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#purchase">Purchase</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#features">Features</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#testimonials">Testimonials</a>
+                  </li>
                 </ul>
             </div>
         </div>
@@ -55,22 +52,25 @@
     <!-- Masthead -->
     <header id="purchase" class="masthead text-white text-center">
       <div class="overlay"></div>
+      <div class="overlay"></div>
+      <div class="overlay"></div>
+      
       <div id="loader">
           <p class="text-center">Loading...</p>
       </div>
       <div class="container" id="content">
         <div class="row">
           <div class="col-xl-9 mx-auto">
-            <h1 class="mb-5">Introducing the world's first decentralized wireless shower head</h1>
+            <h1 class="mb-5">Introducing the world's first decentralized wireless shower head.</h1>
           </div>
           <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-            <form>
+            <form onSubmit="App.buyTokens(); return false;" role="form">
               <div class="form-row">
                 <div class="col-12 col-md-9 mb-2 mb-md-0">
                   <input id="numberOfTokens" type="number" name="number" value="1" min="1" pattern="[0-9]" class="form-control form-control-lg input-lg">
                 </div>
                 <div class="col-12 col-md-3">
-                    <button type="submit" class="btn btn-block btn-lg btn-success">Purchase</button>
+                    <button type="submit" class="btn btn-block btn-lg btn-info">Purchase</button>
                     </div>
                 </div>
             </form>
@@ -83,7 +83,7 @@
             <div class="progress">
                 <div id="progress" class="progress-bar bg-success progress-bar-animated proegress-bar-striped active" aria-valuemin="0" aria-val></div>
             </div>
-            <p><span class="token-sold"> / <span class="tokens-available"></span>&nbsp; tokens sold</span></p>
+            <p><span class="tokens-sold"></span> / <span class="tokens-available"></span>&nbsp; tokens sold</span></p>
             <hr>
             <p id="accountAddress"></p>
         </div>
@@ -98,28 +98,28 @@
           <div class="col-lg-4">
             <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
               <div class="features-icons-icon d-flex">
-                <i class="icon-screen-desktop m-auto text-primary"></i>
+                <i class="fas fa-mobile-alt m-auto"></i>
               </div>
-              <h3>Fully Responsive</h3>
-              <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
+              <h3>Mobile First</h3>
+              <!--<p class="lead mb-0">BlockShower supports </p>-->
             </div>
           </div>
           <div class="col-lg-4">
             <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
               <div class="features-icons-icon d-flex">
-                <i class="icon-layers m-auto text-primary"></i>
+                <i class="icon-layers m-auto"></i>
               </div>
-              <h3>Bootstrap 4 Ready</h3>
-              <p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
+              <h3>Tokenized Reward</h3>
+              <!--<p class="lead mb-0">Rewards users with resuable Shower Tokens (SHOWER)</p>-->
             </div>
           </div>
           <div class="col-lg-4">
             <div class="features-icons-item mx-auto mb-0 mb-lg-3">
               <div class="features-icons-icon d-flex">
-                <i class="icon-check m-auto text-primary"></i>
+                <i class="icon-check m-auto"></i>
               </div>
               <h3>Easy to Use</h3>
-              <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
+              <!--<p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>-->
             </div>
           </div>
         </div>
@@ -130,25 +130,24 @@
     <section class="showcase">
       <div class="container-fluid p-0">
         <div class="row no-gutters">
-
           <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-1.jpg');"></div>
           <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-            <h2>Fully Responsive Design</h2>
-            <p class="lead mb-0">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+            <h2>Issued on decentralized blockchain</h2>
+            <p class="lead mb-0">Working closely with Oober's engineering team, we finally developed robust Smart Contracts that enables delegated transfer.</p>
           </div>
         </div>
         <div class="row no-gutters">
           <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/bg-showcase-2.jpg');"></div>
           <div class="col-lg-6 my-auto showcase-text">
-            <h2>Updated For Bootstrap 4</h2>
-            <p class="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
+            <h2>Optimized with AI</h2>
+            <p class="lead mb-0">With the use of appropriate data structures, BlockShower's deep learning algorithm has been certified by Andrew Ing from G00Gle.</p>
           </div>
         </div>
         <div class="row no-gutters">
           <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-3.jpg');"></div>
           <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-            <h2>Easy to Use &amp; Customize</h2>
-            <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
+            <h2>Powered by quantum computing</h2>
+            <p class="lead mb-0">With quantum computing, BlockShower's performace has increased by 146.732%</p>
           </div>
         </div>
       </div>
@@ -162,22 +161,22 @@
           <div class="col-lg-4">
             <div class="testimonial-item mx-auto mb-5 mb-lg-0">
               <img class="img-fluid rounded-circle mb-3" src="img/testimonials-1.jpg" alt="">
-              <h5>Margaret E.</h5>
-              <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
+              <h5><a href="https://www.linkedin.com/in/alexanderbricken/">Alexander M. Bricken</a></h5>
+              <p class="font-weight-light mb-0">"I really rate the product. A shower on-the-go? Whoa."</p>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="testimonial-item mx-auto mb-5 mb-lg-0">
               <img class="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpg" alt="">
-              <h5>Fred S.</h5>
-              <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+              <h5><a href="https://www.linkedin.com/in/alexander-wu-aw/">Alexander Wu</a></h5>
+              <p class="font-weight-light mb-0">"This has revolutionized the way I live. Powered by quantum computing? Whoa."</p>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="testimonial-item mx-auto mb-5 mb-lg-0">
               <img class="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg" alt="">
-              <h5>Sarah	W.</h5>
-              <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
+              <h5><a href="https://www.linkedin.com/in/ba-thien-tran-70b5ba148/">Ba Thien Tran</a></h5>
+              <p class="font-weight-light mb-0">"This is the pinnacle of human intelligence. Powered by AI? Whoa."</p>
             </div>
           </div>
         </div>
@@ -187,13 +186,6 @@
     <!-- Call to Action -->
     <section class="call-to-action text-white text-center">
       <div class="overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-9 mx-auto">
-            <h2 class="mb-4">Ready to get started? Sign up now!</h2>
-          </div>
-        </div>
-      </div>
     </section>
 
     <!-- Footer -->
@@ -218,7 +210,7 @@
                 <a href="#">Privacy Policy</a>
               </li>
             </ul>
-            <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2018. All Rights Reserved.</p>
+            <p class="text-muted small mb-4 mb-lg-0">&copy; BlockShower 2018. All Rights Reserved.</p>
           </div>
           <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
             <ul class="list-inline mb-0">
@@ -244,7 +236,7 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/web3.min.js"></script>
     <script src="js/truffle-contract.min.js"></script>

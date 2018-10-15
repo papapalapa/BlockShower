@@ -2,9 +2,32 @@
 
 [Landing Page](http://startbootstrap.com/template-overviews/landing-page/) is a multipurpose landing page template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
 
-## Preview
+## Connecting the website to network
+
+#### Configure the test network or specify production network
+geth --rinkeby --rpc --rpcapi="personal,eth,network,web3,net" --ipcpath "~/AppData/Roaming/Ethereum/geth.ipc"
+
+#### Test connection
+geth attach http://localhost:8545
+
+#### Create an account
+get --rinkeby account new
+
+#### Add account
+
+geth --rinkeby account import key.txt --datadir "C:\Users\wkdgn\AppData\Roaming\Ethereum\rinkeby\geth\chaindata"
+
+#### Request test ether
+[Test Transaction](https://www.etherchain.org/account/Cd47a71b55c384aa36400df4e274c8356de2d500)
+
+https://rinkeby.etherscan.io/address/0xcd47A71b55c384aA36400Df4E274C8356DE2D500
 
 [![Landing Page Preview](https://startbootstrap.com/assets/img/templates/landing-page.jpg)](https://blackrockdigital.github.io/startbootstrap-landing-page/)
+
+geth attach ipc:\\.\pipe\geth.ipc
+
+#### Migrate to new network
+truffle migrate --reset --compile-all --network rinkeby
 
 **[View Live Preview](https://blackrockdigital.github.io/startbootstrap-landing-page/)**
 
