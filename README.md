@@ -1,6 +1,6 @@
 # [BlockShower](https://papapalapa.github.io/BlockShower)
 ***
-![Landing Page Preview](https://https://papapalapa.github.io/BlockShower/img/demo.jpg)
+![Landing Page Preview](https://papapalapa.github.io/BlockShower/img/demo.jpg)
 
 [BlockShower](https://papapalapa.github.io/BlockShower) is the world's first decentralized wireless shower head that allows
 users to take shower whenever they want and wherever they want. The more you use BlockShower, the more SHOWER tokens you will receive. You can use SHOWER tokens to purchase toiletries.
@@ -59,4 +59,4 @@ The design of the website is based on the [Startbootstrap](artbootstrap.com/temp
 
 ## Copyright and License
 
-Copyright 2013-2018 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/gh-pages/LICENSE) license.
+Copyright (c) 2018 Janghoon Lee. Code released under the [MIT](https://github.com/papapalapa/BlockShower/blob/master/LICENSE) license.
