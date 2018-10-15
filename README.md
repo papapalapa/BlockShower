@@ -16,21 +16,21 @@ To begin using BlockShower:
 ## Connecting the website to Rinkeby Test Network
 
 #### Configure the test network or specify production network
-'geth --rinkeby --rpc --rpcapi="personal,eth,network,web3,net" --ipcpath "~/AppData/Roaming/Ethereum/geth.ipc"'
+`geth --rinkeby --rpc --rpcapi="personal,eth,network,web3,net" --ipcpath "~/AppData/Roaming/Ethereum/geth.ipc"'`
 
 #### Test connection
-'geth attach http://localhost:8545'
+`geth attach http://localhost:8545`
 
 or
 
-'geth attach ipc:\\.\pipe\geth.ipc'
+`geth attach ipc:\\.\pipe\geth.ipc`
 
 #### Create an account
-'get --rinkeby account new'
+`get --rinkeby account new`
 
 #### Add account
 
-'geth --rinkeby account import key.txt --datadir "C:\Users\USERNAME\AppData\Roaming\Ethereum\rinkeby\geth\chaindata"'
+`geth --rinkeby account import key.txt --datadir "C:\Users\USERNAME\AppData\Roaming\Ethereum\rinkeby\geth\chaindata"`
 
 #### Request test ether
 [Etherchain](https://www.etherchain.org/account/Cd47a71b55c384aa36400df4e274c8356de2d500)
@@ -39,7 +39,7 @@ or
 
 #### Connecting to localnetwork
 
-'truffle migrate --reset --compile-all --network rinkeby'
+`truffle migrate --reset --compile-all --network rinkeby`
 
 Make sure you have MetaMask installed and Ganache running!
 
