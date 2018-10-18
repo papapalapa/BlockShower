@@ -49,7 +49,8 @@ BlockShower is an open source project that utilizes Rinkeby Test network to mimi
 
 ## About - Developer
 
-I'm Janghoon Lee from [Minerva Schools at KGI](https://www.minerva.kgi.edu)! I'm passionate about utilizing my software engineering skiils to create projects that entertain people. If you are a web developer (Node.js + Express, Python + Django, React), let's connect! If you are an AI enginner, let's connect!
+I'm Janghoon Lee from [Minerva Schools at KGI](https://www.minerva.kgi.edu)! I'm passionate about utilizing my software engineering skills to create projects that entertain people. If you are a web 
+developer (Node.js + Express, Python + Django, React), let's connect! If you are an AI enginner, let's connect!
 
 [Janghoon Lee](https://www.linkedin.com/in/janghoon-lee-6b92a0171/)
 
